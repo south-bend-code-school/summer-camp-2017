@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!--Stylesheets: All of your stylesheets are in this section  -->
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -35,24 +35,12 @@
 
 <body>
   <div class="row">
-    <form class="col s12">
-
-      <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
-      </div>
+    <div class="col s12">
 
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Weight</label>
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
         </div>
       </div>
 
@@ -65,16 +53,16 @@
 
       <div class="row">
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
+          <input id="password" type="password" class="validate">
+          <label for="password">Weight</label>
         </div>
       </div>
 
-    </form>
+
   </div>
 
   <div class="row">
-    <button>Submit</button>
+    <button id="submitButton">Login</button>
   </div>
 </body>
 </html>

@@ -19,6 +19,7 @@
   }
 
   function searchMealType(){
+    $('#results').empty();
     var mealType = $('#mealSelect option:selected').text().toLowerCase();
     firebase.database().ref("Restaurant").once('value', function(snapshot){
       var restaurant = snapshot.val();
